@@ -38,6 +38,7 @@ namespace GUI.UserControls
             this.butTheLoai = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.butPhieuNhap = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.siticoneGradientPanel1 = new Siticone.Desktop.UI.WinForms.SiticoneGradientPanel();
+            this.butTraCuu= new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.siticoneGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +76,7 @@ namespace GUI.UserControls
             this.butTuaSach.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.butTuaSach.Location = new System.Drawing.Point(0, 0);
             this.butTuaSach.Name = "butTuaSach";
-            this.butTuaSach.Size = new System.Drawing.Size(189, 62);
+            this.butTuaSach.Size = new System.Drawing.Size(137, 62);
             this.butTuaSach.TabIndex = 1;
             this.butTuaSach.Text = "Tựa sách";
             this.butTuaSach.Click += new System.EventHandler(this.butTuaSach_Click);
@@ -99,9 +100,9 @@ namespace GUI.UserControls
             this.butSach.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Bold);
             this.butSach.ForeColor = System.Drawing.Color.Black;
             this.butSach.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.butSach.Location = new System.Drawing.Point(189, 0);
+            this.butSach.Location = new System.Drawing.Point(137, 0);
             this.butSach.Name = "butSach";
-            this.butSach.Size = new System.Drawing.Size(173, 62);
+            this.butSach.Size = new System.Drawing.Size(146, 62);
             this.butSach.TabIndex = 0;
             this.butSach.Text = "Sách";
             this.butSach.Click += new System.EventHandler(this.butSach_Click);
@@ -124,9 +125,9 @@ namespace GUI.UserControls
             this.butCuonsach.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Bold);
             this.butCuonsach.ForeColor = System.Drawing.Color.Black;
             this.butCuonsach.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.butCuonsach.Location = new System.Drawing.Point(362, 0);
+            this.butCuonsach.Location = new System.Drawing.Point(283, 0);
             this.butCuonsach.Name = "butCuonsach";
-            this.butCuonsach.Size = new System.Drawing.Size(187, 62);
+            this.butCuonsach.Size = new System.Drawing.Size(152, 62);
             this.butCuonsach.TabIndex = 2;
             this.butCuonsach.Text = "Cuốn sách";
             this.butCuonsach.Click += new System.EventHandler(this.butCuonsach_Click_1);
@@ -149,9 +150,9 @@ namespace GUI.UserControls
             this.butTacGia.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Bold);
             this.butTacGia.ForeColor = System.Drawing.Color.Black;
             this.butTacGia.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.butTacGia.Location = new System.Drawing.Point(549, 0);
+            this.butTacGia.Location = new System.Drawing.Point(435, 0);
             this.butTacGia.Name = "butTacGia";
-            this.butTacGia.Size = new System.Drawing.Size(199, 62);
+            this.butTacGia.Size = new System.Drawing.Size(170, 62);
             this.butTacGia.TabIndex = 3;
             this.butTacGia.Text = "Tác giả";
             this.butTacGia.Click += new System.EventHandler(this.butTacGia_Click);
@@ -174,7 +175,7 @@ namespace GUI.UserControls
             this.butTheLoai.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Bold);
             this.butTheLoai.ForeColor = System.Drawing.Color.Black;
             this.butTheLoai.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.butTheLoai.Location = new System.Drawing.Point(748, 0);
+            this.butTheLoai.Location = new System.Drawing.Point(605, 0);
             this.butTheLoai.Name = "butTheLoai";
             this.butTheLoai.Size = new System.Drawing.Size(188, 62);
             this.butTheLoai.TabIndex = 4;
@@ -199,9 +200,9 @@ namespace GUI.UserControls
             this.butPhieuNhap.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Bold);
             this.butPhieuNhap.ForeColor = System.Drawing.Color.Black;
             this.butPhieuNhap.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.butPhieuNhap.Location = new System.Drawing.Point(936, 0);
+            this.butPhieuNhap.Location = new System.Drawing.Point(793, 0);
             this.butPhieuNhap.Name = "butPhieuNhap";
-            this.butPhieuNhap.Size = new System.Drawing.Size(255, 62);
+            this.butPhieuNhap.Size = new System.Drawing.Size(210, 62);
             this.butPhieuNhap.TabIndex = 5;
             this.butPhieuNhap.Text = "Phiếu nhập sách";
             this.butPhieuNhap.Click += new System.EventHandler(this.butPhieuNhap_Click);
@@ -209,6 +210,7 @@ namespace GUI.UserControls
             // siticoneGradientPanel1
             // 
             this.siticoneGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siticoneGradientPanel1.Controls.Add(this.butTraCuu);
             this.siticoneGradientPanel1.Controls.Add(this.butPhieuNhap);
             this.siticoneGradientPanel1.Controls.Add(this.butTheLoai);
             this.siticoneGradientPanel1.Controls.Add(this.butTacGia);
@@ -221,6 +223,31 @@ namespace GUI.UserControls
             this.siticoneGradientPanel1.Name = "siticoneGradientPanel1";
             this.siticoneGradientPanel1.Size = new System.Drawing.Size(1187, 62);
             this.siticoneGradientPanel1.TabIndex = 0;
+            // 
+            // butTraCuu
+            // 
+            this.butTraCuu.BackColor = System.Drawing.Color.DodgerBlue;
+            this.butTraCuu.BorderColor = System.Drawing.Color.Transparent;
+            this.butTraCuu.ButtonMode = Siticone.Desktop.UI.WinForms.Enums.ButtonMode.RadioButton;
+            this.butTraCuu.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.butTraCuu.CheckedState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.butTraCuu.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.butTraCuu.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.butTraCuu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.butTraCuu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.butTraCuu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.butTraCuu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.butTraCuu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.butTraCuu.FillColor = System.Drawing.Color.Transparent;
+            this.butTraCuu.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Bold);
+            this.butTraCuu.ForeColor = System.Drawing.Color.Black;
+            this.butTraCuu.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.butTraCuu.Location = new System.Drawing.Point(1003, 0);
+            this.butTraCuu.Name = "butTraCuu";
+            this.butTraCuu.Size = new System.Drawing.Size(184, 62);
+            this.butTraCuu.TabIndex = 6;
+            this.butTraCuu.Text = "Tra cứu";
+            this.butTraCuu.Click += new System.EventHandler(this.butTraCuu_Click);
             // 
             // ucQLSach
             // 
@@ -244,6 +271,7 @@ namespace GUI.UserControls
         private SiticoneButton butTheLoai;
         private SiticoneButton butPhieuNhap;
         private SiticoneGradientPanel siticoneGradientPanel1;
+        private SiticoneButton butTraCuu;
         //public SiticoneContainerControl Container1 { get => container; set => container = value; }
     }
 }

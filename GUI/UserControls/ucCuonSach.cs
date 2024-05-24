@@ -160,5 +160,10 @@ namespace GUI.UserControls
             MessageBox.Show("Đã hiện thành công " + cnt + " cuốn sách", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Binding(BUSCuonSach.Instance.GetAllCuonSach());
         }
+
+        private void txtMaSach_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

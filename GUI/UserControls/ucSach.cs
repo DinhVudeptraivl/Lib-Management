@@ -167,5 +167,15 @@ namespace GUI.UserControls
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
             Binding(BUSSach.Instance.GetAllSach());
         }
+
+        private void SachGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void topPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

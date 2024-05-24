@@ -131,7 +131,7 @@ namespace GUI.UserControls
             // 
             this.comboTheLoai.BackColor = System.Drawing.Color.Transparent;
             this.comboTheLoai.BorderColor = System.Drawing.Color.Black;
-            this.comboTheLoai.BorderRadius = 2;
+            this.comboTheLoai.BorderRadius = 4;
             this.comboTheLoai.BorderThickness = 2;
             this.comboTheLoai.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboTheLoai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -172,7 +172,7 @@ namespace GUI.UserControls
             // txtFind
             // 
             this.txtFind.BorderColor = System.Drawing.Color.Black;
-            this.txtFind.BorderRadius = 2;
+            this.txtFind.BorderRadius = 4;
             this.txtFind.BorderThickness = 2;
             this.txtFind.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFind.DefaultText = "";

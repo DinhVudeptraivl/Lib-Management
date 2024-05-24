@@ -94,7 +94,7 @@ namespace GUI.UserControls
             this.txtTenLoaiDG.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTenLoaiDG.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenLoaiDG.Font = new System.Drawing.Font("Segoe UI Variable Display", 10F);
-            this.txtTenLoaiDG.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.txtTenLoaiDG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.txtTenLoaiDG.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenLoaiDG.Location = new System.Drawing.Point(430, 56);
             this.txtTenLoaiDG.Margin = new System.Windows.Forms.Padding(5);

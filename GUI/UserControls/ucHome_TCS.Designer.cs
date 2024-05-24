@@ -79,7 +79,7 @@
             this.comboTinhTrang.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.comboTinhTrang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.comboTinhTrang.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.8F);
-            this.comboTinhTrang.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.comboTinhTrang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.comboTinhTrang.ItemHeight = 30;
             this.comboTinhTrang.Location = new System.Drawing.Point(14, 105);
             this.comboTinhTrang.Name = "comboTinhTrang";
@@ -120,7 +120,7 @@
             this.comboTheLoai.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.comboTheLoai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.comboTheLoai.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.8F);
-            this.comboTheLoai.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.comboTheLoai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.comboTheLoai.ItemHeight = 30;
             this.comboTheLoai.Location = new System.Drawing.Point(14, 60);
             this.comboTheLoai.Name = "comboTheLoai";
@@ -201,7 +201,7 @@
             this.txtMaSach.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMaSach.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaSach.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-            this.txtMaSach.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.txtMaSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.txtMaSach.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaSach.Location = new System.Drawing.Point(14, 14);
             this.txtMaSach.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

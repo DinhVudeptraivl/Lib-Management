@@ -120,7 +120,7 @@
             this.txtFind.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtFind.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFind.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.2F);
-            this.txtFind.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.txtFind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.txtFind.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFind.Location = new System.Drawing.Point(14, 64);
             this.txtFind.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

@@ -34,8 +34,17 @@ namespace GUI
             }
             foreach(TACGIA tg in tuasach.TACGIAs)
             {
-                TacGiaGrid.Rows.Add(tg.TenTacGia, tg.id);
+                if (tg != null)
+                {
+                    TacGiaGrid.Rows.Add(tg.TenTacGia, tg.id);
+                }
+                else
+                {
+                    MessageBox.Show("Tựa sách chưa có tác giả!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
             }
+
             Binding();
         }
         private void Binding()

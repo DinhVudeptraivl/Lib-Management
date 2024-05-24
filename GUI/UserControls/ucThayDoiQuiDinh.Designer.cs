@@ -52,6 +52,10 @@
             this.label14 = new System.Windows.Forms.Label();
             this.numKcNam = new Siticone.Desktop.UI.WinForms.SiticoneNumericUpDown();
             this.label15 = new System.Windows.Forms.Label();
+            this.siticonePanel8 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.numNgayMuon = new Siticone.Desktop.UI.WinForms.SiticoneNumericUpDown();
+            this.label21 = new System.Windows.Forms.Label();
             this.siticonePanel9 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.label17 = new System.Windows.Forms.Label();
             this.numSoSach = new Siticone.Desktop.UI.WinForms.SiticoneNumericUpDown();
@@ -60,10 +64,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.txtDonGia = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.siticonePanel8 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.numNgayMuon = new Siticone.Desktop.UI.WinForms.SiticoneNumericUpDown();
-            this.label21 = new System.Windows.Forms.Label();
             this.siticoneSeparator2 = new Siticone.Desktop.UI.WinForms.SiticoneSeparator();
             this.label16 = new System.Windows.Forms.Label();
             this.infoPanel.SuspendLayout();
@@ -81,11 +81,11 @@
             this.siticonePanel6.SuspendLayout();
             this.siticonePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numKcNam)).BeginInit();
+            this.siticonePanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numNgayMuon)).BeginInit();
             this.siticonePanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numSoSach)).BeginInit();
             this.siticonePanel7.SuspendLayout();
-            this.siticonePanel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numNgayMuon)).BeginInit();
             this.SuspendLayout();
             // 
             // infoPanel
@@ -480,6 +480,70 @@
             this.label15.TabIndex = 0;
             this.label15.Text = "Khoảng cách năm xuất bản tối đa có thể nhận sách:";
             // 
+            // siticonePanel8
+            // 
+            this.siticonePanel8.Controls.Add(this.label20);
+            this.siticonePanel8.Controls.Add(this.numNgayMuon);
+            this.siticonePanel8.Controls.Add(this.label21);
+            this.siticonePanel8.CustomBorderColor = System.Drawing.Color.Black;
+            this.siticonePanel8.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.siticonePanel8.Location = new System.Drawing.Point(16, 114);
+            this.siticonePanel8.Margin = new System.Windows.Forms.Padding(4);
+            this.siticonePanel8.Name = "siticonePanel8";
+            this.siticonePanel8.Padding = new System.Windows.Forms.Padding(0, 12, 0, 5);
+            this.siticonePanel8.Size = new System.Drawing.Size(925, 47);
+            this.siticonePanel8.TabIndex = 13;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label20.Font = new System.Drawing.Font("Segoe UI Variable Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(302, 12);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(64, 31);
+            this.label20.TabIndex = 79;
+            this.label20.Text = "ngày";
+            // 
+            // numNgayMuon
+            // 
+            this.numNgayMuon.BackColor = System.Drawing.Color.Transparent;
+            this.numNgayMuon.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.numNgayMuon.Dock = System.Windows.Forms.DockStyle.Left;
+            this.numNgayMuon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numNgayMuon.Location = new System.Drawing.Point(232, 12);
+            this.numNgayMuon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.numNgayMuon.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numNgayMuon.Name = "numNgayMuon";
+            this.numNgayMuon.Size = new System.Drawing.Size(70, 30);
+            this.numNgayMuon.TabIndex = 78;
+            this.numNgayMuon.UpDownButtonFillColor = System.Drawing.Color.DodgerBlue;
+            this.numNgayMuon.Value = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.numNgayMuon.ValueChanged += new System.EventHandler(this.numNgayMuon_ValueChanged);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label21.Font = new System.Drawing.Font("Segoe UI Variable Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Black;
+            this.label21.Location = new System.Drawing.Point(0, 12);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(232, 31);
+            this.label21.TabIndex = 77;
+            this.label21.Text = "Số ngày mượn tối đa:";
+            // 
             // siticonePanel9
             // 
             this.siticonePanel9.Controls.Add(this.label17);
@@ -606,70 +670,6 @@
             this.label19.TabIndex = 77;
             this.label19.Text = "Đơn giá phạt trả trễ:";
             // 
-            // siticonePanel8
-            // 
-            this.siticonePanel8.Controls.Add(this.label20);
-            this.siticonePanel8.Controls.Add(this.numNgayMuon);
-            this.siticonePanel8.Controls.Add(this.label21);
-            this.siticonePanel8.CustomBorderColor = System.Drawing.Color.Black;
-            this.siticonePanel8.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.siticonePanel8.Location = new System.Drawing.Point(16, 114);
-            this.siticonePanel8.Margin = new System.Windows.Forms.Padding(4);
-            this.siticonePanel8.Name = "siticonePanel8";
-            this.siticonePanel8.Padding = new System.Windows.Forms.Padding(0, 12, 0, 5);
-            this.siticonePanel8.Size = new System.Drawing.Size(925, 47);
-            this.siticonePanel8.TabIndex = 13;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label20.Font = new System.Drawing.Font("Segoe UI Variable Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(302, 12);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(64, 31);
-            this.label20.TabIndex = 79;
-            this.label20.Text = "ngày";
-            // 
-            // numNgayMuon
-            // 
-            this.numNgayMuon.BackColor = System.Drawing.Color.Transparent;
-            this.numNgayMuon.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.numNgayMuon.Dock = System.Windows.Forms.DockStyle.Left;
-            this.numNgayMuon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numNgayMuon.Location = new System.Drawing.Point(232, 12);
-            this.numNgayMuon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.numNgayMuon.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.numNgayMuon.Name = "numNgayMuon";
-            this.numNgayMuon.Size = new System.Drawing.Size(70, 30);
-            this.numNgayMuon.TabIndex = 78;
-            this.numNgayMuon.UpDownButtonFillColor = System.Drawing.Color.DodgerBlue;
-            this.numNgayMuon.Value = new decimal(new int[] {
-            4,
-            0,
-            0,
-            0});
-            this.numNgayMuon.ValueChanged += new System.EventHandler(this.numNgayMuon_ValueChanged);
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label21.Font = new System.Drawing.Font("Segoe UI Variable Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(0, 12);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(232, 31);
-            this.label21.TabIndex = 77;
-            this.label21.Text = "Số ngày mượn tối đa:";
-            // 
             // siticoneSeparator2
             // 
             this.siticoneSeparator2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -725,14 +725,14 @@
             this.siticonePanel2.ResumeLayout(false);
             this.siticonePanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numKcNam)).EndInit();
+            this.siticonePanel8.ResumeLayout(false);
+            this.siticonePanel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numNgayMuon)).EndInit();
             this.siticonePanel9.ResumeLayout(false);
             this.siticonePanel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numSoSach)).EndInit();
             this.siticonePanel7.ResumeLayout(false);
             this.siticonePanel7.PerformLayout();
-            this.siticonePanel8.ResumeLayout(false);
-            this.siticonePanel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numNgayMuon)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -31,6 +31,7 @@ namespace GUI.UserControls
         private ucTheLoai uctheLoai;
         private ucTacGia uctacGia;
         private ucPhieuNhap ucphieuNhap;
+        private ucHome_TCS uctracuu;
         private void InitializeContainer()
         {
             // add ca 3 UC Sach, Cuon sach va Tua sach vao container
@@ -40,12 +41,14 @@ namespace GUI.UserControls
             uctacGia = new ucTacGia() { Dock = DockStyle.Fill, Name = "tacgia" };
             uctheLoai = new ucTheLoai() { Dock = DockStyle.Fill, Name = "theloai" };
             ucphieuNhap = new ucPhieuNhap() { Dock = DockStyle.Fill, Name = "phieunhap" };
+            uctracuu = new ucHome_TCS() { Dock = DockStyle.Fill, Name = "tracuu" };
             container.Controls.Add(ucsach);
             container.Controls.Add(uctuaSach);
             container.Controls.Add(uccuonSach);
             container.Controls.Add(uctacGia);
             container.Controls.Add(uctheLoai);
             container.Controls.Add(ucphieuNhap);
+            container.Controls.Add(uctracuu);
         }
 
         /// <summary>
@@ -106,7 +109,12 @@ namespace GUI.UserControls
             ucphieuNhap.Binding(BUSPhieuNhap.Instance.GetAllPhieuNhap());
             con[0].BringToFront();
         }
-
+        private void butTraCuu_Click(object sender, EventArgs e)
+        {
+            Control[] con = container.Controls.Find("tracuu", false);
+            //ucphieuNhap.Binding(BUSPhieuNhap.Instance.GetAllPhieuNhap());
+            con[0].BringToFront();
+        }
         private void container_Click(object sender, EventArgs e)
         {
 
