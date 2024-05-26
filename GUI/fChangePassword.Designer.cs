@@ -37,16 +37,16 @@
             this.txtMKM = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.txtMKHT = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.siticoneSeparator1 = new Siticone.Desktop.UI.WinForms.SiticoneSeparator();
             this.siticoneControlBox2 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             this.siticoneControlBox1 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             this.siticoneDragControl1 = new Siticone.Desktop.UI.WinForms.SiticoneDragControl(this.components);
-            this.siticoneSeparator1 = new Siticone.Desktop.UI.WinForms.SiticoneSeparator();
             this.siticoneContainerControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // siticoneContainerControl1
             // 
-            this.siticoneContainerControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siticoneContainerControl1.BackColor = System.Drawing.Color.AliceBlue;
             this.siticoneContainerControl1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.siticoneContainerControl1.BorderRadius = 6;
             this.siticoneContainerControl1.BorderThickness = 2;
@@ -58,7 +58,7 @@
             this.siticoneContainerControl1.Controls.Add(this.txtMKHT);
             this.siticoneContainerControl1.Controls.Add(this.label1);
             this.siticoneContainerControl1.Controls.Add(this.siticoneSeparator1);
-            this.siticoneContainerControl1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siticoneContainerControl1.FillColor = System.Drawing.Color.AliceBlue;
             this.siticoneContainerControl1.Location = new System.Drawing.Point(64, 82);
             this.siticoneContainerControl1.Name = "siticoneContainerControl1";
             this.siticoneContainerControl1.Size = new System.Drawing.Size(494, 405);
@@ -92,6 +92,7 @@
             // butSave
             // 
             this.butSave.BorderRadius = 6;
+            this.butSave.BorderThickness = 2;
             this.butSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.butSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.butSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -187,6 +188,16 @@
             this.label1.Text = "Đổi mật khẩu";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // siticoneSeparator1
+            // 
+            this.siticoneSeparator1.FillColor = System.Drawing.Color.Black;
+            this.siticoneSeparator1.FillThickness = 2;
+            this.siticoneSeparator1.Location = new System.Drawing.Point(45, 80);
+            this.siticoneSeparator1.Name = "siticoneSeparator1";
+            this.siticoneSeparator1.Size = new System.Drawing.Size(394, 28);
+            this.siticoneSeparator1.TabIndex = 160;
+            this.siticoneSeparator1.Click += new System.EventHandler(this.siticoneSeparator1_Click);
+            // 
             // siticoneControlBox2
             // 
             this.siticoneControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -217,16 +228,6 @@
             this.siticoneDragControl1.DockIndicatorTransparencyValue = 0.6D;
             this.siticoneDragControl1.TargetControl = this;
             this.siticoneDragControl1.UseTransparentDrag = true;
-            // 
-            // siticoneSeparator1
-            // 
-            this.siticoneSeparator1.FillColor = System.Drawing.Color.Black;
-            this.siticoneSeparator1.FillThickness = 2;
-            this.siticoneSeparator1.Location = new System.Drawing.Point(45, 80);
-            this.siticoneSeparator1.Name = "siticoneSeparator1";
-            this.siticoneSeparator1.Size = new System.Drawing.Size(394, 28);
-            this.siticoneSeparator1.TabIndex = 160;
-            this.siticoneSeparator1.Click += new System.EventHandler(this.siticoneSeparator1_Click);
             // 
             // fChangePassword
             // 

@@ -38,7 +38,7 @@ namespace BUS
             bool isDG = false;
             foreach (CHUCNANG cn in nnd.CHUCNANGs)
             {
-                if (cn.TenChucNang == "DG") isDG = true;
+               if (cn.TenChucNang == "DG") isDG = true;
             }
             if (isDG && nnd.NGUOIDUNGs.Count > 0) 
                 return "Không thể xóa nhóm người dùng vì các người dùng thuộc nhóm này có quyền độc giả!";

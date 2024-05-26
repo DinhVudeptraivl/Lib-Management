@@ -11,7 +11,7 @@ namespace DTO
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class NGUOIDUNG
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,7 +19,7 @@ namespace DTO
         {
             this.DOCGIAs = new HashSet<DOCGIA>();
         }
-    
+
         public int id { get; set; }
         public string MaNguoiDung { get; set; }
         public string TenNguoiDung { get; set; }
@@ -28,9 +28,10 @@ namespace DTO
         public string TenDangNhap { get; set; }
         public string MatKhau { get; set; }
         public int idNhomNguoiDung { get; set; }
-    
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DOCGIA> DOCGIAs { get; set; }
         public virtual NHOMNGUOIDUNG NHOMNGUOIDUNG { get; set; }
+        //public virtual DOCGIA DOCGIA {get;set;}
     }
 }

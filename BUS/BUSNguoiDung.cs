@@ -25,6 +25,7 @@ namespace BUS
         {
             return DALNguoiDung.Instance.GetAllNguoiDung();
         }
+        /*
         public string DelNguoidung(string maNguoiDung)
         {
             NGUOIDUNG nd = DALNguoiDung.Instance.GetNguoiDungByMa(maNguoiDung);
@@ -42,6 +43,30 @@ namespace BUS
                 if (cn.TenChucNang == "DG") isDG = true;
             }
             if (isDG) return "Không thể xóa người dùng là độc giả!";
+            if (DALNguoiDung.Instance.DelNguoiDung(nd.id)) return "";
+            return "Không thể xoá người dùng!";
+        }*/
+        public string DelNguoidung(string maNguoiDung)
+        {
+            NGUOIDUNG nd = DALNguoiDung.Instance.GetNguoiDungByMa(maNguoiDung);
+            if (nd == null)
+            {
+                return "Mã người dùng không hợp lệ!";
+            }
+            if (nd.TenDangNhap == "admin")
+            {
+                return "Không thể xoá người dùng!";
+            }
+            //bool isDGno = false;
+            bool isDG = false;
+            foreach (CHUCNANG cn in nd.NHOMNGUOIDUNG.CHUCNANGs)
+            {
+                //DOCGIA dg = DALDocGia.Instance.FindDocGiaByIdND(nd.id);
+                //if (cn.TenChucNang == "DG" && dg.TongNoHienTai > 0) isDGno = true;
+                if (cn.TenChucNang == "DG") isDG = true;
+            }
+            //if (isDGno) return "Không thể xóa người dùng là độc giả đang nợ!";
+            if (isDG) return "Không thể xóa người dùng là độc giả";
             if (DALNguoiDung.Instance.DelNguoiDung(nd.id)) return "";
             return "Không thể xoá người dùng!";
         }

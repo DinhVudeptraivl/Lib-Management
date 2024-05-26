@@ -382,7 +382,5 @@ INSERT INTO DOCGIA (TenDocGia, NgaySinh, NgayLapThe, NgayHetHan, idLoaiDocGia, i
 INSERT INTO DOCGIA (TenDocGia, NgaySinh, NgayLapThe, NgayHetHan, idLoaiDocGia, idNguoiDung) VALUES (N'Đỗ Chí Hiếu', '01/01/2004', '19/05/2021', '19/11/2024', 2, 28)
 INSERT INTO DOCGIA (TenDocGia, NgaySinh, NgayLapThe, NgayHetHan, idLoaiDocGia, idNguoiDung) VALUES (N'Trịnh Lê Thanh Bình', '28/10/2004', '26/08/2023', '26/02/2024', 2, 29)
 INSERT INTO DOCGIA (TenDocGia, NgaySinh, NgayLapThe, NgayHetHan, idLoaiDocGia, idNguoiDung) VALUES (N'Lê Dương Minh Thiên', '21/05/2004', '26/09/2023', '26/03/2024', 2, 30)
-INSERT INTO DOCGIA (TenDocGia, NgaySinh, NgayLapThe, NgayHetHan, idLoaiDocGia, idNguoiDung) VALUES (N'Trương Phi', '03/11/2004', '26/09/2023', '26/03/2024', 2, 31)
-INSERT INTO DOCGIA (TenDocGia, NgaySinh, NgayLapThe, NgayHetHan, idLoaiDocGia, idNguoiDung) VALUES (N'Hong Hae In', '04/05/2004', '26/08/2023', '26/02/2024', 2, 32)
 go
 INSERT INTO THAMSO VALUES(18, 55, 6, 8, 5, 4, 1000, 1)

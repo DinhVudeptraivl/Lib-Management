@@ -171,7 +171,6 @@
             this.NDGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.NDGrid.Location = new System.Drawing.Point(0, 107);
             this.NDGrid.Name = "NDGrid";
-            this.NDGrid.ReadOnly = true;
             this.NDGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.NDGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.NDGrid.RowHeadersVisible = false;
@@ -192,7 +191,7 @@
             this.NDGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.NDGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.NDGrid.ThemeStyle.HeaderStyle.Height = 35;
-            this.NDGrid.ThemeStyle.ReadOnly = true;
+            this.NDGrid.ThemeStyle.ReadOnly = false;
             this.NDGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.NDGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.NDGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -210,7 +209,6 @@
             this.isChosen.IndeterminateValue = "0";
             this.isChosen.MinimumWidth = 6;
             this.isChosen.Name = "isChosen";
-            this.isChosen.ReadOnly = true;
             this.isChosen.TrueValue = "1";
             this.isChosen.Width = 6;
             // 
@@ -220,7 +218,6 @@
             this.id.HeaderText = "id";
             this.id.MinimumWidth = 6;
             this.id.Name = "id";
-            this.id.ReadOnly = true;
             this.id.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.id.Visible = false;
             // 
@@ -230,7 +227,6 @@
             this.maNhomNguoiDungDataGridViewTextBoxColumn.HeaderText = "Mã nhóm người dùng";
             this.maNhomNguoiDungDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.maNhomNguoiDungDataGridViewTextBoxColumn.Name = "maNhomNguoiDungDataGridViewTextBoxColumn";
-            this.maNhomNguoiDungDataGridViewTextBoxColumn.ReadOnly = true;
             this.maNhomNguoiDungDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // tenNhomNguoiDungDataGridViewTextBoxColumn
@@ -239,7 +235,6 @@
             this.tenNhomNguoiDungDataGridViewTextBoxColumn.HeaderText = "Tên nhóm người dùng";
             this.tenNhomNguoiDungDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.tenNhomNguoiDungDataGridViewTextBoxColumn.Name = "tenNhomNguoiDungDataGridViewTextBoxColumn";
-            this.tenNhomNguoiDungDataGridViewTextBoxColumn.ReadOnly = true;
             this.tenNhomNguoiDungDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // nGUOIDUNGsDataGridViewTextBoxColumn
@@ -248,7 +243,6 @@
             this.nGUOIDUNGsDataGridViewTextBoxColumn.HeaderText = "NGUOIDUNGs";
             this.nGUOIDUNGsDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nGUOIDUNGsDataGridViewTextBoxColumn.Name = "nGUOIDUNGsDataGridViewTextBoxColumn";
-            this.nGUOIDUNGsDataGridViewTextBoxColumn.ReadOnly = true;
             this.nGUOIDUNGsDataGridViewTextBoxColumn.Visible = false;
             // 
             // cHUCNANGsDataGridViewTextBoxColumn
@@ -257,7 +251,6 @@
             this.cHUCNANGsDataGridViewTextBoxColumn.HeaderText = "CHUCNANGs";
             this.cHUCNANGsDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.cHUCNANGsDataGridViewTextBoxColumn.Name = "cHUCNANGsDataGridViewTextBoxColumn";
-            this.cHUCNANGsDataGridViewTextBoxColumn.ReadOnly = true;
             this.cHUCNANGsDataGridViewTextBoxColumn.Visible = false;
             // 
             // Edit
@@ -266,7 +259,6 @@
             this.Edit.HeaderText = "";
             this.Edit.MinimumWidth = 6;
             this.Edit.Name = "Edit";
-            this.Edit.ReadOnly = true;
             this.Edit.Width = 6;
             // 
             // nHOMNGUOIDUNGBindingSource
