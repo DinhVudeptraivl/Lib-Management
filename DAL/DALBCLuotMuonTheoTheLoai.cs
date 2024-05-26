@@ -53,20 +53,41 @@ namespace DAL
         /// <returns></returns>
         public int AddBaoCao (int thang, int nam)
         {
+            /*            try
+                        {
+
+
+                            var bc = new BCLUOTMUONTHEOTHELOAI
+                            {
+                                Thang = thang,
+                                Nam = nam,
+                                TongSoLuotMuon = 0,
+                            };
+                            QLTVDb.Instance.BCLUOTMUONTHEOTHELOAIs.Add(bc);
+                            QLTVDb.Instance.SaveChanges();
+
+                            return bc.id;
+                        }*/
             try
             {
                 var bc = new BCLUOTMUONTHEOTHELOAI
                 {
                     Thang = thang,
-                    Nam = nam,
-                    TongSoLuotMuon = 0
+                    Nam = nam
                 };
                 QLTVDb.Instance.BCLUOTMUONTHEOTHELOAIs.Add(bc);
                 QLTVDb.Instance.SaveChanges();
 
-                return bc.id;
+                // Now that the BaoCao entity is added to the database, you can access its id
+                int newBaoCaoId = bc.id;
+
+                // Compute TongSoLuotMuon using the newly obtained id
+                Compute(newBaoCaoId);
+
+                return newBaoCaoId;
             }
-            catch(Exception ex)
+
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.InnerException.ToString());
                 return -1;
