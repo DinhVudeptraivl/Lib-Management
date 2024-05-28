@@ -56,7 +56,8 @@ namespace BUS
             if(dg == null)
                 return "Không tìm thấy độc giả!";
             THAMSO ts = DALThamSo.Instance.GetAllThamSo();
-            if (dg.TongNoHienTai < soTienThu && ts.AD_QDKTTienThu == 1) return "Số tiền thu không hợp lệ";
+            if (dg.TongNoHienTai < soTienThu && ts.AD_QDKTTienThu == 1 || soTienThu <= 0)
+                return "Số tiền thu không hợp lệ";
             if (DALPhieuThu.Instance.AddPhieuThu(idDocGia, soTienThu, ngayLap))
                 return "";
             return "Không thể thêm phiếu thu!";

@@ -54,12 +54,13 @@ namespace GUI.UserControls
                 MessageBox.Show("Chưa có báo cáo trong tháng này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            var res = MessageBox.Show("Bạn có chắc muốn xóa báo cáo của tháng" + month.ToString() + "/" + year.ToString() + "?",
+            var res = MessageBox.Show("Bạn có chắc muốn xóa báo cáo của tháng " + month.ToString() + "/" + year.ToString() + "?",
                 "Xóa báo cáo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (res == DialogResult.No) return;
             BUSBCTheoTheLoai.Instance.DelBC(bc.MaBaoCao);
             MessageBox.Show("Đã xóa báo cáo", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             dataGrid.Rows.Clear();
+            labelTongLM.Text = "Tổng số lượt mượn: 0" ;
         }
 
         private void topPanel_Paint(object sender, PaintEventArgs e)

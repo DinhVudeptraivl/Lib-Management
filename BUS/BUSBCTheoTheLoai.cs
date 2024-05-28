@@ -59,7 +59,7 @@ namespace BUS
         public string DelBC(string Mabc)
         {
             BCLUOTMUONTHEOTHELOAI bc = DALBCLuotMuonTheoTheLoai.Instance.GetBaoCaoByMa(Mabc);
-            if(bc == null )
+            if(bc == null)
             {
                 return "Mã báo cáo không hợp lệ!";
             }

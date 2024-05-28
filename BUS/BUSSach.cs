@@ -49,8 +49,13 @@ namespace BUS
                 return Tuple.Create("Tựa sách không hợp lệ!",-1);
             }
             THAMSO thamso = DALThamSo.Instance.GetAllThamSo();
+
             if ((int)DateTime.Now.Year - NamXb > thamso.KhoangCachXuatBan || (int)DateTime.Now.Year - NamXb <0)
                 return Tuple.Create("Năm xuất bản không hợp lệ!",-1);
+
+            if (DonGia <= 0 || DonGia >= int.MaxValue)
+                return Tuple.Create("Giá nhập không hợp lệ!", -1);
+
             int idSach = DALSach.Instance.AddSachMoi(ts, DonGia, NamXb, NhaXB);
             if (idSach != -1)
                 return Tuple.Create("",idSach);

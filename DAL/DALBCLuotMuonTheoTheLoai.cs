@@ -121,6 +121,24 @@ namespace DAL
             return true;
         }
 
+        /*        public bool DelBaoCao(int id)
+                {
+                    try
+                    {
+                        var bc = GetBaoCaoById(id);
+                        if (bc == null) return false;
+
+                        QLTVDb.Instance.BCLUOTMUONTHEOTHELOAIs.Remove(bc);
+                        QLTVDb.Instance.SaveChanges();
+
+                        return true;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.InnerException.ToString());
+                        return false;
+                    }
+                }*/
         public bool DelBaoCao(int id)
         {
             try
@@ -128,6 +146,11 @@ namespace DAL
                 var bc = GetBaoCaoById(id);
                 if (bc == null) return false;
 
+                // Delete related records in the child table first
+                var relatedRecords = QLTVDb.Instance.CT_BCLUOTMUONTHEOTHELOAI.Where(ct => ct.idBaoCao == id);
+                QLTVDb.Instance.CT_BCLUOTMUONTHEOTHELOAI.RemoveRange(relatedRecords);
+
+                // Then delete the parent record
                 QLTVDb.Instance.BCLUOTMUONTHEOTHELOAIs.Remove(bc);
                 QLTVDb.Instance.SaveChanges();
 
@@ -139,5 +162,6 @@ namespace DAL
                 return false;
             }
         }
+
     }
 }
