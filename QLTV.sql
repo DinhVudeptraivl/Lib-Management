@@ -1,5 +1,4 @@
-﻿-- Note: you have to drop QLTV database (if you had) first before running entire script
---DROP DATABASE QLTV
+﻿--DROP DATABASE QLTV
 CREATE DATABASE QLTV
 go
 USE QLTV
